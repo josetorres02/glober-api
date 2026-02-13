@@ -24,51 +24,16 @@ public class Glober {
     }
 
     // Getters y Setters
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Squads getSquad() {
-        return squad;
-    }
-
-    public void setSquad(Squads squad) {
-        this.squad = squad;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSeniority() {
-        return seniority;
-    }
-
-    public void setSeniority(String seniority) {
-        this.seniority = seniority;
-    }
-
-    public Double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(Double salary) {
-        this.salary = salary;
-    }
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public Squads getSquad() { return squad; }
+    public void setSquad(Squads squad) { this.squad = squad; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+    public String getSeniority() { return seniority; }
+    public void setSeniority(String seniority) { this.seniority = seniority; }
+    public Double getSalary() { return salary; }
+    public void setSalary(Double salary) { this.salary = salary; }
 }

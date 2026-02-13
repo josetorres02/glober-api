@@ -3,7 +3,7 @@ package com.jose.primer_api.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "usuarios") // 'users' es palabra reservada en algunas BD, mejor 'usuarios'
+@Table(name = "usuarios")
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,9 +13,9 @@ public class Usuario {
     private String username;
 
     @Column(nullable = false)
-    private String password; // Aquí guardaremos el HASH, no "123"
+    private String password;
 
-    private String role; // "ADMIN", "USER"
+    private String role;
 
     // Getters y Setters
     public Long getId() { return id; }

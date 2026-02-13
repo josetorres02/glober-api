@@ -7,4 +7,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface GloberRepository extends JpaRepository<Glober, Long> {
     // Ya vienen los metodos por defecto al usar Jpa gracias a Spring
-}
+} 

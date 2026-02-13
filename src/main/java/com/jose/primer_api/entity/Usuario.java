@@ -1,0 +1,29 @@
+package com.jose.primer_api.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "usuarios") // 'users' es palabra reservada en algunas BD, mejor 'usuarios'
+public class Usuario {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(unique = true, nullable = false)
+    private String username;
+
+    @Column(nullable = false)
+    private String password; // Aquí guardaremos el HASH, no "123"
+
+    private String role; // "ADMIN", "USER"
+
+    // Getters y Setters
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getUsername() { return username; }
+    public void setUsername(String username) { this.username = username; }
+    public String getPassword(){ return password; }
+    public void setPassword(String password){ this.password = password; }
+    public String getRole(){ return role; }
+    public void setRole(String role){ this.role = role; }
+}
